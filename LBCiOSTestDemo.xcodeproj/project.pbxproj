@@ -24,6 +24,9 @@
 		8D36992F29D444C0006B0629 /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36992D29D444C0006B0629 /* UseCaseProvider.swift */; };
 		8D36993029D444C0006B0629 /* UseCaseProviderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36992E29D444C0006B0629 /* UseCaseProviderImpl.swift */; };
 		8D36993229D4451E006B0629 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36993129D4451E006B0629 /* Container.swift */; };
+		8D36993629D447A2006B0629 /* DataLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36993529D447A2006B0629 /* DataLoaderService.swift */; };
+		8D36993829D447B0006B0629 /* RemoteDataLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36993729D447B0006B0629 /* RemoteDataLoaderService.swift */; };
+		8D36993C29D45059006B0629 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36993B29D45059006B0629 /* Errors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		8D36992D29D444C0006B0629 /* UseCaseProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
 		8D36992E29D444C0006B0629 /* UseCaseProviderImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseProviderImpl.swift; sourceTree = "<group>"; };
 		8D36993129D4451E006B0629 /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		8D36993529D447A2006B0629 /* DataLoaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoaderService.swift; sourceTree = "<group>"; };
+		8D36993729D447B0006B0629 /* RemoteDataLoaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataLoaderService.swift; sourceTree = "<group>"; };
+		8D36993B29D45059006B0629 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +152,7 @@
 		8D36990729D43579006B0629 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8D36993429D44790006B0629 /* DataLoader */,
 				8D36991829D43AC0006B0629 /* Provider */,
 			);
 			path = Services;
@@ -186,6 +193,7 @@
 		8D36990C29D435D4006B0629 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8D36993B29D45059006B0629 /* Errors.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -245,6 +253,15 @@
 				8D36991B29D44103006B0629 /* ServiceProviderImpl.swift */,
 			);
 			path = Provider;
+			sourceTree = "<group>";
+		};
+		8D36993429D44790006B0629 /* DataLoader */ = {
+			isa = PBXGroup;
+			children = (
+				8D36993529D447A2006B0629 /* DataLoaderService.swift */,
+				8D36993729D447B0006B0629 /* RemoteDataLoaderService.swift */,
+			);
+			path = DataLoader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,6 +394,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D36993829D447B0006B0629 /* RemoteDataLoaderService.swift in Sources */,
+				8D36993C29D45059006B0629 /* Errors.swift in Sources */,
 				8D3698DC29D4314F006B0629 /* AdsListingViewController.swift in Sources */,
 				8D36993229D4451E006B0629 /* Container.swift in Sources */,
 				8D36993029D444C0006B0629 /* UseCaseProviderImpl.swift in Sources */,
@@ -387,6 +406,7 @@
 				8D36992C29D44482006B0629 /* RepositoryProvider.swift in Sources */,
 				8D36992F29D444C0006B0629 /* UseCaseProvider.swift in Sources */,
 				8D36991129D4363E006B0629 /* AdsListingViewModel.swift in Sources */,
+				8D36993629D447A2006B0629 /* DataLoaderService.swift in Sources */,
 				8D36991329D43659006B0629 /* AdsListingView.swift in Sources */,
 				8D3698DA29D4314F006B0629 /* SceneDelegate.swift in Sources */,
 			);
