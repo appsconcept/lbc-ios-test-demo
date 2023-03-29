@@ -17,6 +17,8 @@
 		8D3698FB29D43150006B0629 /* LBCiOSTestDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3698FA29D43150006B0629 /* LBCiOSTestDemoUITestsLaunchTests.swift */; };
 		8D36991129D4363E006B0629 /* AdsListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36991029D4363E006B0629 /* AdsListingViewModel.swift */; };
 		8D36991329D43659006B0629 /* AdsListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36991229D43659006B0629 /* AdsListingView.swift */; };
+		8D36991A29D440F8006B0629 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36991929D440F8006B0629 /* ServiceProvider.swift */; };
+		8D36991C29D44103006B0629 /* ServiceProviderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36991B29D44103006B0629 /* ServiceProviderImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		8D3698FA29D43150006B0629 /* LBCiOSTestDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBCiOSTestDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8D36991029D4363E006B0629 /* AdsListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsListingViewModel.swift; sourceTree = "<group>"; };
 		8D36991229D43659006B0629 /* AdsListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsListingView.swift; sourceTree = "<group>"; };
+		8D36991929D440F8006B0629 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		8D36991B29D44103006B0629 /* ServiceProviderImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 		8D36990729D43579006B0629 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8D36991829D43AC0006B0629 /* Provider */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 		8D36990829D435A7006B0629 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				8D36991729D43AB4006B0629 /* Provider */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -146,6 +152,7 @@
 		8D36990929D435B1006B0629 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				8D36991629D43AAD006B0629 /* Provider */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -200,6 +207,29 @@
 				8D36991229D43659006B0629 /* AdsListingView.swift */,
 			);
 			path = AdsListing;
+			sourceTree = "<group>";
+		};
+		8D36991629D43AAD006B0629 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		8D36991729D43AB4006B0629 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		8D36991829D43AC0006B0629 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				8D36991929D440F8006B0629 /* ServiceProvider.swift */,
+				8D36991B29D44103006B0629 /* ServiceProviderImpl.swift */,
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +363,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D3698DC29D4314F006B0629 /* AdsListingViewController.swift in Sources */,
+				8D36991C29D44103006B0629 /* ServiceProviderImpl.swift in Sources */,
+				8D36991A29D440F8006B0629 /* ServiceProvider.swift in Sources */,
 				8D3698D829D4314F006B0629 /* AppDelegate.swift in Sources */,
 				8D36991129D4363E006B0629 /* AdsListingViewModel.swift in Sources */,
 				8D36991329D43659006B0629 /* AdsListingView.swift in Sources */,
