@@ -8,5 +8,9 @@
 import Foundation
 
 class ServiceProviderImpl: ServiceProvider {
-  // TODO: Implement init after implementing new services
+  var remoteDataLoaderService: DataLoaderService
+
+  init() {
+    self.remoteDataLoaderService = RemoteDataLoaderService()
+  }
 }

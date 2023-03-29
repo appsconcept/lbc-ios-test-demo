@@ -8,5 +8,5 @@
 import Foundation
 
 protocol ServiceProvider {
-  // TODO: Declare services after implementing them
+  var remoteDataLoaderService: DataLoaderService { get }
 }
