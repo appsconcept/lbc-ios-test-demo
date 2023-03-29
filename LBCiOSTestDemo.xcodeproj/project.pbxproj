@@ -23,6 +23,7 @@
 		8D36992C29D44482006B0629 /* RepositoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36992A29D44481006B0629 /* RepositoryProvider.swift */; };
 		8D36992F29D444C0006B0629 /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36992D29D444C0006B0629 /* UseCaseProvider.swift */; };
 		8D36993029D444C0006B0629 /* UseCaseProviderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36992E29D444C0006B0629 /* UseCaseProviderImpl.swift */; };
+		8D36993229D4451E006B0629 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36993129D4451E006B0629 /* Container.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		8D36992A29D44481006B0629 /* RepositoryProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryProvider.swift; sourceTree = "<group>"; };
 		8D36992D29D444C0006B0629 /* UseCaseProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
 		8D36992E29D444C0006B0629 /* UseCaseProviderImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseProviderImpl.swift; sourceTree = "<group>"; };
+		8D36993129D4451E006B0629 /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 		8D36990E29D43607006B0629 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				8D36993129D4451E006B0629 /* Container.swift */,
 				8D36990A29D435BF006B0629 /* Entities */,
 				8D36990929D435B1006B0629 /* UseCases */,
 				8D36990829D435A7006B0629 /* Repositories */,
@@ -375,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D3698DC29D4314F006B0629 /* AdsListingViewController.swift in Sources */,
+				8D36993229D4451E006B0629 /* Container.swift in Sources */,
 				8D36993029D444C0006B0629 /* UseCaseProviderImpl.swift in Sources */,
 				8D36991C29D44103006B0629 /* ServiceProviderImpl.swift in Sources */,
 				8D36991A29D440F8006B0629 /* ServiceProvider.swift in Sources */,
