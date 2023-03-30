@@ -9,4 +9,5 @@ import Foundation
 
 protocol ServiceProvider {
   var remoteDataLoaderService: DataLoaderService { get }
+  var adsService: AdsService { get }
 }
