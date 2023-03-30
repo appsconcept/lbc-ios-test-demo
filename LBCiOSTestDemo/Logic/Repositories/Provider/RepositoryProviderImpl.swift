@@ -8,5 +8,9 @@
 import Foundation
 
 class RepositoryProviderImpl: RepositoryProvider {
-  // TODO: Implement init after implementing new repositories
+  var adsRepository: AdsRepository
+
+  init(services: ServiceProvider) {
+    self.adsRepository = AdsRepositoryImpl(service: services.adsService)
+  }
 }

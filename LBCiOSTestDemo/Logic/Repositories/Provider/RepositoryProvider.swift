@@ -8,5 +8,5 @@
 import Foundation
 
 protocol RepositoryProvider {
-  // TODO: Declare repositories after implementing them
+  var adsRepository: AdsRepository { get }
 }
