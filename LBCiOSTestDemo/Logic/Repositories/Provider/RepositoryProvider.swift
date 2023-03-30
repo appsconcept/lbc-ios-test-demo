@@ -9,4 +9,5 @@ import Foundation
 
 protocol RepositoryProvider {
   var adsRepository: AdsRepository { get }
+  var categoriesRepository: CategoriesRepository { get }
 }
