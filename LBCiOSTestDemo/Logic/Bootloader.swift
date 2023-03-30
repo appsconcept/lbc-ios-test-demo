@@ -9,7 +9,10 @@ import Foundation
 
 class Bootloader {
   func start() {
+    // Initialize the Container
     setupContainer()
+    // Pre load the categories
+    Container.useCases.provideLoadCategoriesUseCase().execute()
   }
 
   private func setupContainer() {
