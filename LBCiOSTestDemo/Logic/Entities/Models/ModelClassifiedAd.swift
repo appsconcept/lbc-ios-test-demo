@@ -7,12 +7,12 @@
 
 import Foundation
 
-class ModelClassifiedAd {
+class ModelClassifiedAd: Hashable {
   let id: Int
   let categoryId: Int
   let title: String
   let description: String
-  let price: Float
+  let price: String
   let imagesUrl: ModelImagesUrl
   let creationDate: String
   let isUrgent: Bool
@@ -22,7 +22,7 @@ class ModelClassifiedAd {
     categoryId: Int,
     title: String,
     description: String,
-    price: Float,
+    price: String,
     imagesUrl: ModelImagesUrl,
     creationDate: String,
     isUrgent: Bool
@@ -35,5 +35,20 @@ class ModelClassifiedAd {
     self.imagesUrl = imagesUrl
     self.creationDate = creationDate
     self.isUrgent = isUrgent
+  }
+
+  func hash(into hasher: inout Hasher) {
+    hasher.combine(self.id)
+    hasher.combine(self.categoryId)
+    hasher.combine(self.title)
+    hasher.combine(self.description)
+    hasher.combine(self.price)
+    hasher.combine(self.imagesUrl)
+    hasher.combine(self.creationDate)
+    hasher.combine(self.isUrgent)
+  }
+
+  static func == (lhs: ModelClassifiedAd, rhs: ModelClassifiedAd) -> Bool {
+    return lhs.hashValue == rhs.hashValue
   }
 }

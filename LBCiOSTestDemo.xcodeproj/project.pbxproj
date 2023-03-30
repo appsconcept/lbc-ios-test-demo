@@ -40,6 +40,12 @@
 		8D36995A29D5C6AA006B0629 /* ModelImagesUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36995929D5C6AA006B0629 /* ModelImagesUrl.swift */; };
 		8D36995D29D5CA5B006B0629 /* GetAdsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36995C29D5CA5B006B0629 /* GetAdsUseCase.swift */; };
 		8D36995F29D5D0A3006B0629 /* Bootloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36995E29D5D0A3006B0629 /* Bootloader.swift */; };
+		8D36996129D5D25D006B0629 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D36996029D5D25D006B0629 /* Localizable.strings */; };
+		8D36996829D5EACC006B0629 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36996729D5EACC006B0629 /* UIImageView.swift */; };
+		8D36996E29D60495006B0629 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36996D29D60495006B0629 /* ImageCache.swift */; };
+		8D36997029D60C7B006B0629 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36996F29D60C7B006B0629 /* Formatters.swift */; };
+		8D36997329D62E15006B0629 /* ClassifiedAdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36997129D62E15006B0629 /* ClassifiedAdCell.swift */; };
+		8D36997429D62E15006B0629 /* AdsListingCollectionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36997229D62E15006B0629 /* AdsListingCollectionAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +103,12 @@
 		8D36995929D5C6AA006B0629 /* ModelImagesUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelImagesUrl.swift; sourceTree = "<group>"; };
 		8D36995C29D5CA5B006B0629 /* GetAdsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAdsUseCase.swift; sourceTree = "<group>"; };
 		8D36995E29D5D0A3006B0629 /* Bootloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bootloader.swift; sourceTree = "<group>"; };
+		8D36996029D5D25D006B0629 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		8D36996729D5EACC006B0629 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		8D36996D29D60495006B0629 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		8D36996F29D60C7B006B0629 /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		8D36997129D62E15006B0629 /* ClassifiedAdCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifiedAdCell.swift; sourceTree = "<group>"; };
+		8D36997229D62E15006B0629 /* AdsListingCollectionAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdsListingCollectionAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +166,7 @@
 				8D3698E029D43150006B0629 /* Assets.xcassets */,
 				8D3698E229D43150006B0629 /* LaunchScreen.storyboard */,
 				8D3698E529D43150006B0629 /* Info.plist */,
+				8D36996029D5D25D006B0629 /* Localizable.strings */,
 			);
 			path = LBCiOSTestDemo;
 			sourceTree = "<group>";
@@ -235,6 +248,7 @@
 		8D36990D29D435E5006B0629 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				8D36996629D5EABF006B0629 /* Extensions */,
 				8D36990F29D4361C006B0629 /* AdsListing */,
 			);
 			path = UI;
@@ -243,6 +257,7 @@
 		8D36990E29D43607006B0629 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				8D36996C29D6048C006B0629 /* Utilities */,
 				8D36993129D4451E006B0629 /* Container.swift */,
 				8D36990A29D435BF006B0629 /* Entities */,
 				8D36990929D435B1006B0629 /* UseCases */,
@@ -256,6 +271,8 @@
 		8D36990F29D4361C006B0629 /* AdsListing */ = {
 			isa = PBXGroup;
 			children = (
+				8D36997229D62E15006B0629 /* AdsListingCollectionAdapter.swift */,
+				8D36997129D62E15006B0629 /* ClassifiedAdCell.swift */,
 				8D3698DB29D4314F006B0629 /* AdsListingViewController.swift */,
 				8D36991029D4363E006B0629 /* AdsListingViewModel.swift */,
 				8D36991229D43659006B0629 /* AdsListingView.swift */,
@@ -325,6 +342,23 @@
 				8D36995C29D5CA5B006B0629 /* GetAdsUseCase.swift */,
 			);
 			path = Ads;
+			sourceTree = "<group>";
+		};
+		8D36996629D5EABF006B0629 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8D36996729D5EACC006B0629 /* UIImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8D36996C29D6048C006B0629 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8D36996D29D60495006B0629 /* ImageCache.swift */,
+				8D36996F29D60C7B006B0629 /* Formatters.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,6 +466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D3698E429D43150006B0629 /* LaunchScreen.storyboard in Resources */,
+				8D36996129D5D25D006B0629 /* Localizable.strings in Resources */,
 				8D3698E129D43150006B0629 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,6 +498,7 @@
 				8D36994B29D476C8006B0629 /* ImagesUrlDTO.swift in Sources */,
 				8D36995429D5C542006B0629 /* AdsRepository.swift in Sources */,
 				8D36995629D5C54C006B0629 /* AdsRepositoryImpl.swift in Sources */,
+				8D36997429D62E15006B0629 /* AdsListingCollectionAdapter.swift in Sources */,
 				8D36994929D4759B006B0629 /* ClassifiedAdDTO.swift in Sources */,
 				8D36994329D46EBB006B0629 /* AdsService.swift in Sources */,
 				8D3698DC29D4314F006B0629 /* AdsListingViewController.swift in Sources */,
@@ -470,6 +506,8 @@
 				8D36993029D444C0006B0629 /* UseCaseProviderImpl.swift in Sources */,
 				8D36995D29D5CA5B006B0629 /* GetAdsUseCase.swift in Sources */,
 				8D36991C29D44103006B0629 /* ServiceProviderImpl.swift in Sources */,
+				8D36997329D62E15006B0629 /* ClassifiedAdCell.swift in Sources */,
+				8D36996829D5EACC006B0629 /* UIImageView.swift in Sources */,
 				8D36994F29D478E6006B0629 /* AdsServiceRoutes.swift in Sources */,
 				8D36995829D5C5D3006B0629 /* ModelClassifiedAd.swift in Sources */,
 				8D36991A29D440F8006B0629 /* ServiceProvider.swift in Sources */,
@@ -478,12 +516,14 @@
 				8D36992B29D44482006B0629 /* RepositoryProviderImpl.swift in Sources */,
 				8D36992C29D44482006B0629 /* RepositoryProvider.swift in Sources */,
 				8D36992F29D444C0006B0629 /* UseCaseProvider.swift in Sources */,
+				8D36997029D60C7B006B0629 /* Formatters.swift in Sources */,
 				8D36991129D4363E006B0629 /* AdsListingViewModel.swift in Sources */,
 				8D36993629D447A2006B0629 /* DataLoaderService.swift in Sources */,
 				8D36995A29D5C6AA006B0629 /* ModelImagesUrl.swift in Sources */,
 				8D36991329D43659006B0629 /* AdsListingView.swift in Sources */,
 				8D3698DA29D4314F006B0629 /* SceneDelegate.swift in Sources */,
 				8D36994529D46ECF006B0629 /* AdsApiService.swift in Sources */,
+				8D36996E29D60495006B0629 /* ImageCache.swift in Sources */,
 				8D36994D29D478DA006B0629 /* AdsRouteProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

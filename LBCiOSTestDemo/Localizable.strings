@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  LBCiOSTestDemo
+
+  Created by Marco Appsconcept on 30/03/2023.
+  
+*/
+
+"ads.page.title"="Annonces";
+"ads.page.cell.urgent.label"="Urgent";

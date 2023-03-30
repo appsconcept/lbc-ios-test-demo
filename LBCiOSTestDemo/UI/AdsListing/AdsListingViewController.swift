@@ -29,7 +29,23 @@ class AdsListingViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+
+    self.viewModel.load { result in
+      switch result {
+      case .success(let ads):
+        self.adsListingView.collectionAdapter.itemsChanged(ads)
+      case .failure(_):
+        let alert = UIAlertController(title: NSLocalizedString("", comment: ""),
+                                      message: NSLocalizedString("", comment: ""),
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("", comment: ""),
+                                      style: .default) { _ in
+          alert.dismiss(animated: true, completion: nil)
+        })
+
+        self.present(alert, animated: true, completion: nil)
+      }
+    }
   }
 }
 

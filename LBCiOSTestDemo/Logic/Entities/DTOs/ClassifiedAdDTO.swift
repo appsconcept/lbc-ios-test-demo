@@ -43,7 +43,7 @@ class ClassifiedAdDTO: Decodable {
       categoryId: self.categoryId,
       title: self.title,
       description: self.description,
-      price: self.price,
+      price: Formatters.oneDecimalCaseCurrencyFormattedValue(number: self.price),
       imagesUrl: self.imagesUrl.toModel(),
       creationDate: self.creationDate,
       isUrgent: self.isUrgent

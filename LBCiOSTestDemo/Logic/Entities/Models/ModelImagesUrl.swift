@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ModelImagesUrl {
+class ModelImagesUrl: Hashable {
   let small: String?
   let thumb: String?
 
@@ -17,5 +17,14 @@ class ModelImagesUrl {
   ) {
     self.small = small
     self.thumb = thumb
+  }
+
+  func hash(into hasher: inout Hasher) {
+    hasher.combine(self.small)
+    hasher.combine(self.thumb)
+  }
+
+  static func == (lhs: ModelImagesUrl, rhs: ModelImagesUrl) -> Bool {
+    return lhs.hashValue == rhs.hashValue
   }
 }
