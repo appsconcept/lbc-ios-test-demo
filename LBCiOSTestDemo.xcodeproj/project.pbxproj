@@ -55,6 +55,7 @@
 		8D36998429D631C4006B0629 /* CategoriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36998329D631C4006B0629 /* CategoriesRepository.swift */; };
 		8D36998629D631FD006B0629 /* CategoriesRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36998529D631FD006B0629 /* CategoriesRepositoryImpl.swift */; };
 		8D36998929D63406006B0629 /* LoadCategoriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36998829D63406006B0629 /* LoadCategoriesUseCase.swift */; };
+		8D36998B29D6360A006B0629 /* GetCategoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36998A29D6360A006B0629 /* GetCategoryUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,7 @@
 		8D36998329D631C4006B0629 /* CategoriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRepository.swift; sourceTree = "<group>"; };
 		8D36998529D631FD006B0629 /* CategoriesRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRepositoryImpl.swift; sourceTree = "<group>"; };
 		8D36998829D63406006B0629 /* LoadCategoriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCategoriesUseCase.swift; sourceTree = "<group>"; };
+		8D36998A29D6360A006B0629 /* GetCategoryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCategoryUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -408,6 +410,7 @@
 			isa = PBXGroup;
 			children = (
 				8D36998829D63406006B0629 /* LoadCategoriesUseCase.swift */,
+				8D36998A29D6360A006B0629 /* GetCategoryUseCase.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -568,6 +571,7 @@
 				8D36998629D631FD006B0629 /* CategoriesRepositoryImpl.swift in Sources */,
 				8D36991A29D440F8006B0629 /* ServiceProvider.swift in Sources */,
 				8D36994029D46E44006B0629 /* Constants.swift in Sources */,
+				8D36998B29D6360A006B0629 /* GetCategoryUseCase.swift in Sources */,
 				8D3698D829D4314F006B0629 /* AppDelegate.swift in Sources */,
 				8D36992B29D44482006B0629 /* RepositoryProviderImpl.swift in Sources */,
 				8D36992C29D44482006B0629 /* RepositoryProvider.swift in Sources */,
