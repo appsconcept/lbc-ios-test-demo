@@ -39,6 +39,7 @@
 		8D36995829D5C5D3006B0629 /* ModelClassifiedAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36995729D5C5D3006B0629 /* ModelClassifiedAd.swift */; };
 		8D36995A29D5C6AA006B0629 /* ModelImagesUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36995929D5C6AA006B0629 /* ModelImagesUrl.swift */; };
 		8D36995D29D5CA5B006B0629 /* GetAdsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36995C29D5CA5B006B0629 /* GetAdsUseCase.swift */; };
+		8D36995F29D5D0A3006B0629 /* Bootloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36995E29D5D0A3006B0629 /* Bootloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		8D36995729D5C5D3006B0629 /* ModelClassifiedAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelClassifiedAd.swift; sourceTree = "<group>"; };
 		8D36995929D5C6AA006B0629 /* ModelImagesUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelImagesUrl.swift; sourceTree = "<group>"; };
 		8D36995C29D5CA5B006B0629 /* GetAdsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAdsUseCase.swift; sourceTree = "<group>"; };
+		8D36995E29D5D0A3006B0629 /* Bootloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bootloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +248,7 @@
 				8D36990929D435B1006B0629 /* UseCases */,
 				8D36990829D435A7006B0629 /* Repositories */,
 				8D36990729D43579006B0629 /* Services */,
+				8D36995E29D5D0A3006B0629 /* Bootloader.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 			files = (
 				8D36993829D447B0006B0629 /* RemoteDataLoaderService.swift in Sources */,
 				8D36993C29D45059006B0629 /* Errors.swift in Sources */,
+				8D36995F29D5D0A3006B0629 /* Bootloader.swift in Sources */,
 				8D36994B29D476C8006B0629 /* ImagesUrlDTO.swift in Sources */,
 				8D36995429D5C542006B0629 /* AdsRepository.swift in Sources */,
 				8D36995629D5C54C006B0629 /* AdsRepositoryImpl.swift in Sources */,
