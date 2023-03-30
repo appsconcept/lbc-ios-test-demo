@@ -52,6 +52,8 @@
 		8D36997D29D62FB9006B0629 /* CategoriesApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36997C29D62FB9006B0629 /* CategoriesApiService.swift */; };
 		8D36997F29D62FD3006B0629 /* CategoriesRouteProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36997E29D62FD3006B0629 /* CategoriesRouteProvider.swift */; };
 		8D36998129D63039006B0629 /* CategoriesServiceRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36998029D63039006B0629 /* CategoriesServiceRoutes.swift */; };
+		8D36998429D631C4006B0629 /* CategoriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36998329D631C4006B0629 /* CategoriesRepository.swift */; };
+		8D36998629D631FD006B0629 /* CategoriesRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36998529D631FD006B0629 /* CategoriesRepositoryImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +123,8 @@
 		8D36997C29D62FB9006B0629 /* CategoriesApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesApiService.swift; sourceTree = "<group>"; };
 		8D36997E29D62FD3006B0629 /* CategoriesRouteProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRouteProvider.swift; sourceTree = "<group>"; };
 		8D36998029D63039006B0629 /* CategoriesServiceRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesServiceRoutes.swift; sourceTree = "<group>"; };
+		8D36998329D631C4006B0629 /* CategoriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRepository.swift; sourceTree = "<group>"; };
+		8D36998529D631FD006B0629 /* CategoriesRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRepositoryImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +218,7 @@
 		8D36990829D435A7006B0629 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				8D36998229D631B5006B0629 /* Categories */,
 				8D36995229D5C532006B0629 /* Ads */,
 				8D36991729D43AB4006B0629 /* Provider */,
 			);
@@ -387,6 +392,15 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		8D36998229D631B5006B0629 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8D36998329D631C4006B0629 /* CategoriesRepository.swift */,
+				8D36998529D631FD006B0629 /* CategoriesRepositoryImpl.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -529,6 +543,7 @@
 				8D36997729D62E9C006B0629 /* CategoriesService.swift in Sources */,
 				8D36994929D4759B006B0629 /* ClassifiedAdDTO.swift in Sources */,
 				8D36994329D46EBB006B0629 /* AdsService.swift in Sources */,
+				8D36998429D631C4006B0629 /* CategoriesRepository.swift in Sources */,
 				8D3698DC29D4314F006B0629 /* AdsListingViewController.swift in Sources */,
 				8D36993229D4451E006B0629 /* Container.swift in Sources */,
 				8D36993029D444C0006B0629 /* UseCaseProviderImpl.swift in Sources */,
@@ -539,6 +554,7 @@
 				8D36997929D62EB5006B0629 /* CategoryDTO.swift in Sources */,
 				8D36994F29D478E6006B0629 /* AdsServiceRoutes.swift in Sources */,
 				8D36995829D5C5D3006B0629 /* ModelClassifiedAd.swift in Sources */,
+				8D36998629D631FD006B0629 /* CategoriesRepositoryImpl.swift in Sources */,
 				8D36991A29D440F8006B0629 /* ServiceProvider.swift in Sources */,
 				8D36994029D46E44006B0629 /* Constants.swift in Sources */,
 				8D3698D829D4314F006B0629 /* AppDelegate.swift in Sources */,
