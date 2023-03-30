@@ -21,4 +21,8 @@ class UseCaseProviderImpl: UseCaseProvider {
   func provideLoadCategoriesUseCase() -> LoadCategoriesUseCase {
     return LoadCategoriesUseCase(repository: self.repositories.categoriesRepository)
   }
+
+  func provideGetCategoryUseCase() -> GetCategoryUseCase {
+    return GetCategoryUseCase(repository: self.repositories.categoriesRepository)
+  }
 }

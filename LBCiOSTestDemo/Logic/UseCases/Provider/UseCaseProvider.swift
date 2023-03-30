@@ -10,4 +10,5 @@ import Foundation
 protocol UseCaseProvider {
   func provideGetAdsUseCase() -> GetAdsUseCase
   func provideLoadCategoriesUseCase() -> LoadCategoriesUseCase
+  func provideGetCategoryUseCase() -> GetCategoryUseCase
 }
