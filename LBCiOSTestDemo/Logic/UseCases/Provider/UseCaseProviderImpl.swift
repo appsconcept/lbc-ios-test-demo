@@ -17,4 +17,8 @@ class UseCaseProviderImpl: UseCaseProvider {
   func provideGetAdsUseCase() -> GetAdsUseCase {
     return GetAdsUseCase(repository: self.repositories.adsRepository)
   }
+
+  func provideLoadCategoriesUseCase() -> LoadCategoriesUseCase {
+    return LoadCategoriesUseCase(repository: self.repositories.categoriesRepository)
+  }
 }
