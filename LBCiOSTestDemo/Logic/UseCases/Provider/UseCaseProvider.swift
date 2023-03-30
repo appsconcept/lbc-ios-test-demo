@@ -8,5 +8,5 @@
 import Foundation
 
 protocol UseCaseProvider {
-  // TODO: Declare usecases after implementing them
+  func provideGetAdsUseCase() -> GetAdsUseCase
 }

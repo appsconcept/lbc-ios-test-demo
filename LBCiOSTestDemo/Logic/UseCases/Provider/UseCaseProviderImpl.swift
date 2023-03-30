@@ -8,5 +8,13 @@
 import Foundation
 
 class UseCaseProviderImpl: UseCaseProvider {
-  // TODO: Implement init after implementing new usecases
+  private let repositories: RepositoryProvider
+
+  init(repositories: RepositoryProvider) {
+    self.repositories = repositories
+  }
+
+  func provideGetAdsUseCase() -> GetAdsUseCase {
+    return GetAdsUseCase(repository: self.repositories.adsRepository)
+  }
 }
