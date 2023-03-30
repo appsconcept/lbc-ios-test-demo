@@ -31,7 +31,7 @@ class RemoteDataLoaderService: DataLoaderService {
   func load(request: URLRequest, completion: @escaping (Data?, Error?) -> Void) {
     session.dataTask(with: request) { data, response, error in
       completion(data, self.parseError(error: error))
-    }
+    }.resume()
   }
 
   private func parseError(error: Error?) -> Error? {

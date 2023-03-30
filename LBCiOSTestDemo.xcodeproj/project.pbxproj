@@ -27,6 +27,13 @@
 		8D36993629D447A2006B0629 /* DataLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36993529D447A2006B0629 /* DataLoaderService.swift */; };
 		8D36993829D447B0006B0629 /* RemoteDataLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36993729D447B0006B0629 /* RemoteDataLoaderService.swift */; };
 		8D36993C29D45059006B0629 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36993B29D45059006B0629 /* Errors.swift */; };
+		8D36994029D46E44006B0629 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36993F29D46E44006B0629 /* Constants.swift */; };
+		8D36994329D46EBB006B0629 /* AdsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36994229D46EBB006B0629 /* AdsService.swift */; };
+		8D36994529D46ECF006B0629 /* AdsApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36994429D46ECF006B0629 /* AdsApiService.swift */; };
+		8D36994929D4759B006B0629 /* ClassifiedAdDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36994829D4759B006B0629 /* ClassifiedAdDTO.swift */; };
+		8D36994B29D476C8006B0629 /* ImagesUrlDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36994A29D476C8006B0629 /* ImagesUrlDTO.swift */; };
+		8D36994D29D478DA006B0629 /* AdsRouteProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36994C29D478DA006B0629 /* AdsRouteProvider.swift */; };
+		8D36994F29D478E6006B0629 /* AdsServiceRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36994E29D478E6006B0629 /* AdsServiceRoutes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +78,13 @@
 		8D36993529D447A2006B0629 /* DataLoaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoaderService.swift; sourceTree = "<group>"; };
 		8D36993729D447B0006B0629 /* RemoteDataLoaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataLoaderService.swift; sourceTree = "<group>"; };
 		8D36993B29D45059006B0629 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		8D36993F29D46E44006B0629 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8D36994229D46EBB006B0629 /* AdsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsService.swift; sourceTree = "<group>"; };
+		8D36994429D46ECF006B0629 /* AdsApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsApiService.swift; sourceTree = "<group>"; };
+		8D36994829D4759B006B0629 /* ClassifiedAdDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedAdDTO.swift; sourceTree = "<group>"; };
+		8D36994A29D476C8006B0629 /* ImagesUrlDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesUrlDTO.swift; sourceTree = "<group>"; };
+		8D36994C29D478DA006B0629 /* AdsRouteProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsRouteProvider.swift; sourceTree = "<group>"; };
+		8D36994E29D478E6006B0629 /* AdsServiceRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsServiceRoutes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +166,7 @@
 		8D36990729D43579006B0629 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8D36994129D46E81006B0629 /* Ads */,
 				8D36993429D44790006B0629 /* DataLoader */,
 				8D36991829D43AC0006B0629 /* Provider */,
 			);
@@ -186,6 +201,8 @@
 		8D36990B29D435C9006B0629 /* DTOs */ = {
 			isa = PBXGroup;
 			children = (
+				8D36994829D4759B006B0629 /* ClassifiedAdDTO.swift */,
+				8D36994A29D476C8006B0629 /* ImagesUrlDTO.swift */,
 			);
 			path = DTOs;
 			sourceTree = "<group>";
@@ -194,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				8D36993B29D45059006B0629 /* Errors.swift */,
+				8D36993F29D46E44006B0629 /* Constants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -262,6 +280,17 @@
 				8D36993729D447B0006B0629 /* RemoteDataLoaderService.swift */,
 			);
 			path = DataLoader;
+			sourceTree = "<group>";
+		};
+		8D36994129D46E81006B0629 /* Ads */ = {
+			isa = PBXGroup;
+			children = (
+				8D36994229D46EBB006B0629 /* AdsService.swift */,
+				8D36994429D46ECF006B0629 /* AdsApiService.swift */,
+				8D36994C29D478DA006B0629 /* AdsRouteProvider.swift */,
+				8D36994E29D478E6006B0629 /* AdsServiceRoutes.swift */,
+			);
+			path = Ads;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,11 +425,16 @@
 			files = (
 				8D36993829D447B0006B0629 /* RemoteDataLoaderService.swift in Sources */,
 				8D36993C29D45059006B0629 /* Errors.swift in Sources */,
+				8D36994B29D476C8006B0629 /* ImagesUrlDTO.swift in Sources */,
+				8D36994929D4759B006B0629 /* ClassifiedAdDTO.swift in Sources */,
+				8D36994329D46EBB006B0629 /* AdsService.swift in Sources */,
 				8D3698DC29D4314F006B0629 /* AdsListingViewController.swift in Sources */,
 				8D36993229D4451E006B0629 /* Container.swift in Sources */,
 				8D36993029D444C0006B0629 /* UseCaseProviderImpl.swift in Sources */,
 				8D36991C29D44103006B0629 /* ServiceProviderImpl.swift in Sources */,
+				8D36994F29D478E6006B0629 /* AdsServiceRoutes.swift in Sources */,
 				8D36991A29D440F8006B0629 /* ServiceProvider.swift in Sources */,
+				8D36994029D46E44006B0629 /* Constants.swift in Sources */,
 				8D3698D829D4314F006B0629 /* AppDelegate.swift in Sources */,
 				8D36992B29D44482006B0629 /* RepositoryProviderImpl.swift in Sources */,
 				8D36992C29D44482006B0629 /* RepositoryProvider.swift in Sources */,
@@ -409,6 +443,8 @@
 				8D36993629D447A2006B0629 /* DataLoaderService.swift in Sources */,
 				8D36991329D43659006B0629 /* AdsListingView.swift in Sources */,
 				8D3698DA29D4314F006B0629 /* SceneDelegate.swift in Sources */,
+				8D36994529D46ECF006B0629 /* AdsApiService.swift in Sources */,
+				8D36994D29D478DA006B0629 /* AdsRouteProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
