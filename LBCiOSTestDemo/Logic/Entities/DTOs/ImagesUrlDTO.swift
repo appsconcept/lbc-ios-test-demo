@@ -19,6 +19,13 @@ class ImagesUrlDTO: Decodable {
     self.thumb = thumb
   }
 
+  func toModel() -> ModelImagesUrl {
+    return ModelImagesUrl(
+      small: self.small,
+      thumb: self.thumb
+    )
+  }
+
   enum CodingKeys: String, CodingKey {
     case small = "small"
     case thumb = "thumb"

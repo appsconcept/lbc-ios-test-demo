@@ -37,6 +37,19 @@ class ClassifiedAdDTO: Decodable {
     self.isUrgent = isUrgent
   }
 
+  func toModel() -> ModelClassifiedAd {
+    return ModelClassifiedAd(
+      id: self.id,
+      categoryId: self.categoryId,
+      title: self.title,
+      description: self.description,
+      price: self.price,
+      imagesUrl: self.imagesUrl.toModel(),
+      creationDate: self.creationDate,
+      isUrgent: self.isUrgent
+    )
+  }
+
   enum CodingKeys: String, CodingKey {
     case id = "id"
     case categoryId = "category_id"
