@@ -143,6 +143,6 @@ class ClassifiedAdCell: UICollectionViewCell {
     self.titleLabel.text = classifiedAd.title
     self.priceLabel.text = classifiedAd.price
     self.categoryLabel.text = classifiedAd.category.name
-    self.urgentLabel.isHidden = classifiedAd.isUrgent
+    self.urgentLabel.isHidden = !classifiedAd.isUrgent
   }
 }

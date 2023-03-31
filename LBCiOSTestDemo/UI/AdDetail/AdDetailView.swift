@@ -251,6 +251,6 @@ class AdDetailView: UIView {
     self.categoryValueLabel.text = classifiedAd.category.name
     self.descriptionValueLabel.text = classifiedAd.description
     self.dateLabel.text = classifiedAd.creationDate
-    self.urgentLabel.isHidden = classifiedAd.isUrgent
+    self.urgentLabel.isHidden = !classifiedAd.isUrgent
   }
 }
