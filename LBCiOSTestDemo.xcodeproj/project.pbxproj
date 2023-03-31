@@ -66,6 +66,10 @@
 		8D3699A229D72488006B0629 /* listing.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D3699A129D72488006B0629 /* listing.json */; };
 		8D3699A429D724DC006B0629 /* MockAdsServiceRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3699A329D724DC006B0629 /* MockAdsServiceRoutes.swift */; };
 		8D3699A729D72603006B0629 /* Completion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3699A629D72603006B0629 /* Completion.swift */; };
+		8D3699AA29D72B9C006B0629 /* MockCategoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3699A929D72B9C006B0629 /* MockCategoriesService.swift */; };
+		8D3699AC29D72BD6006B0629 /* MockCategoriesServiceRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3699AB29D72BD6006B0629 /* MockCategoriesServiceRoutes.swift */; };
+		8D3699AE29D72C3B006B0629 /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D3699AD29D72C3B006B0629 /* categories.json */; };
+		8D3699B029D72CD3006B0629 /* CategoriesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3699AF29D72CD3006B0629 /* CategoriesServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +153,10 @@
 		8D3699A129D72488006B0629 /* listing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = listing.json; sourceTree = "<group>"; };
 		8D3699A329D724DC006B0629 /* MockAdsServiceRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAdsServiceRoutes.swift; sourceTree = "<group>"; };
 		8D3699A629D72603006B0629 /* Completion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Completion.swift; sourceTree = "<group>"; };
+		8D3699A929D72B9C006B0629 /* MockCategoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCategoriesService.swift; sourceTree = "<group>"; };
+		8D3699AB29D72BD6006B0629 /* MockCategoriesServiceRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCategoriesServiceRoutes.swift; sourceTree = "<group>"; };
+		8D3699AD29D72C3B006B0629 /* categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = categories.json; sourceTree = "<group>"; };
+		8D3699AF29D72CD3006B0629 /* CategoriesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -455,6 +463,7 @@
 			isa = PBXGroup;
 			children = (
 				8D36999429D71D10006B0629 /* AdsServiceTests.swift */,
+				8D3699AF29D72CD3006B0629 /* CategoriesServiceTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -462,6 +471,7 @@
 		8D36999629D71EFC006B0629 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8D3699A829D72B84006B0629 /* Categories */,
 				8D36999A29D71FC9006B0629 /* DataLoader */,
 				8D36999729D71F01006B0629 /* Ads */,
 			);
@@ -497,6 +507,7 @@
 			isa = PBXGroup;
 			children = (
 				8D3699A129D72488006B0629 /* listing.json */,
+				8D3699AD29D72C3B006B0629 /* categories.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -507,6 +518,15 @@
 				8D3699A629D72603006B0629 /* Completion.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8D3699A829D72B84006B0629 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8D3699A929D72B9C006B0629 /* MockCategoriesService.swift */,
+				8D3699AB29D72BD6006B0629 /* MockCategoriesServiceRoutes.swift */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -624,6 +644,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D3699A229D72488006B0629 /* listing.json in Resources */,
+				8D3699AE29D72C3B006B0629 /* categories.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,13 +715,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D3699AC29D72BD6006B0629 /* MockCategoriesServiceRoutes.swift in Sources */,
 				8D36999529D71D10006B0629 /* AdsServiceTests.swift in Sources */,
 				8D36999F29D7242C006B0629 /* Data.swift in Sources */,
+				8D3699B029D72CD3006B0629 /* CategoriesServiceTests.swift in Sources */,
 				8D3699A429D724DC006B0629 /* MockAdsServiceRoutes.swift in Sources */,
 				8D3699A729D72603006B0629 /* Completion.swift in Sources */,
 				8D3698EF29D43150006B0629 /* LBCiOSTestDemoTests.swift in Sources */,
 				8D36999C29D71FD8006B0629 /* MockDataLoaderService.swift in Sources */,
 				8D36999929D71F10006B0629 /* MockAdsService.swift in Sources */,
+				8D3699AA29D72B9C006B0629 /* MockCategoriesService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
