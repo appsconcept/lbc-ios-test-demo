@@ -59,6 +59,13 @@
 		8D36998E29D6D380006B0629 /* AdDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36998D29D6D380006B0629 /* AdDetailViewController.swift */; };
 		8D36999029D6D38E006B0629 /* AdDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36998F29D6D38E006B0629 /* AdDetailView.swift */; };
 		8D36999229D6D39B006B0629 /* AdDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36999129D6D39B006B0629 /* AdDetailViewModel.swift */; };
+		8D36999529D71D10006B0629 /* AdsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36999429D71D10006B0629 /* AdsServiceTests.swift */; };
+		8D36999929D71F10006B0629 /* MockAdsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36999829D71F10006B0629 /* MockAdsService.swift */; };
+		8D36999C29D71FD8006B0629 /* MockDataLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36999B29D71FD8006B0629 /* MockDataLoaderService.swift */; };
+		8D36999F29D7242C006B0629 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36999E29D7242C006B0629 /* Data.swift */; };
+		8D3699A229D72488006B0629 /* listing.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D3699A129D72488006B0629 /* listing.json */; };
+		8D3699A429D724DC006B0629 /* MockAdsServiceRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3699A329D724DC006B0629 /* MockAdsServiceRoutes.swift */; };
+		8D3699A729D72603006B0629 /* Completion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3699A629D72603006B0629 /* Completion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +142,13 @@
 		8D36998D29D6D380006B0629 /* AdDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailViewController.swift; sourceTree = "<group>"; };
 		8D36998F29D6D38E006B0629 /* AdDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailView.swift; sourceTree = "<group>"; };
 		8D36999129D6D39B006B0629 /* AdDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailViewModel.swift; sourceTree = "<group>"; };
+		8D36999429D71D10006B0629 /* AdsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsServiceTests.swift; sourceTree = "<group>"; };
+		8D36999829D71F10006B0629 /* MockAdsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAdsService.swift; sourceTree = "<group>"; };
+		8D36999B29D71FD8006B0629 /* MockDataLoaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataLoaderService.swift; sourceTree = "<group>"; };
+		8D36999E29D7242C006B0629 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		8D3699A129D72488006B0629 /* listing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = listing.json; sourceTree = "<group>"; };
+		8D3699A329D724DC006B0629 /* MockAdsServiceRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAdsServiceRoutes.swift; sourceTree = "<group>"; };
+		8D3699A629D72603006B0629 /* Completion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Completion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +214,11 @@
 		8D3698ED29D43150006B0629 /* LBCiOSTestDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				8D3699A529D725EA006B0629 /* Utilities */,
+				8D3699A029D72457006B0629 /* Data */,
+				8D36999D29D72424006B0629 /* Extensions */,
+				8D36999629D71EFC006B0629 /* Services */,
+				8D36999329D71CFE006B0629 /* Tests */,
 				8D3698EE29D43150006B0629 /* LBCiOSTestDemoTests.swift */,
 			);
 			path = LBCiOSTestDemoTests;
@@ -432,6 +451,64 @@
 			path = AdDetail;
 			sourceTree = "<group>";
 		};
+		8D36999329D71CFE006B0629 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8D36999429D71D10006B0629 /* AdsServiceTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		8D36999629D71EFC006B0629 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8D36999A29D71FC9006B0629 /* DataLoader */,
+				8D36999729D71F01006B0629 /* Ads */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8D36999729D71F01006B0629 /* Ads */ = {
+			isa = PBXGroup;
+			children = (
+				8D36999829D71F10006B0629 /* MockAdsService.swift */,
+				8D3699A329D724DC006B0629 /* MockAdsServiceRoutes.swift */,
+			);
+			path = Ads;
+			sourceTree = "<group>";
+		};
+		8D36999A29D71FC9006B0629 /* DataLoader */ = {
+			isa = PBXGroup;
+			children = (
+				8D36999B29D71FD8006B0629 /* MockDataLoaderService.swift */,
+			);
+			path = DataLoader;
+			sourceTree = "<group>";
+		};
+		8D36999D29D72424006B0629 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8D36999E29D7242C006B0629 /* Data.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8D3699A029D72457006B0629 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8D3699A129D72488006B0629 /* listing.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8D3699A529D725EA006B0629 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8D3699A629D72603006B0629 /* Completion.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -546,6 +623,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D3699A229D72488006B0629 /* listing.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,7 +694,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D36999529D71D10006B0629 /* AdsServiceTests.swift in Sources */,
+				8D36999F29D7242C006B0629 /* Data.swift in Sources */,
+				8D3699A429D724DC006B0629 /* MockAdsServiceRoutes.swift in Sources */,
+				8D3699A729D72603006B0629 /* Completion.swift in Sources */,
 				8D3698EF29D43150006B0629 /* LBCiOSTestDemoTests.swift in Sources */,
+				8D36999C29D71FD8006B0629 /* MockDataLoaderService.swift in Sources */,
+				8D36999929D71F10006B0629 /* MockAdsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
