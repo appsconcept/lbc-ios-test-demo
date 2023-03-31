@@ -19,6 +19,7 @@ The structure is (from inner layers to outer layers):
 - API requests to acquire list of ads and list of categories
 - Manual dependency injection using a Container of singletons and initializers
 - Image caching
+- Unit tests
 - List of classified ads
   - Thumbnail
   - Title
