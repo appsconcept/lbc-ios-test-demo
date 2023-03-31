@@ -46,6 +46,13 @@ class ClassifiedAdCell: UICollectionViewCell {
     return label
   }()
 
+  lazy var categoryLabel: UILabel = {
+    let label = UILabel()
+    label.font = UIFont.systemFont(ofSize: 12.0, weight: .regular)
+    label.textColor = .gray
+    return label
+  }()
+
   lazy var bottomHairline: UIView = {
     let view = UIView()
     view.backgroundColor = .orange
@@ -115,6 +122,18 @@ class ClassifiedAdCell: UICollectionViewCell {
       self.priceLabel.trailingAnchor.constraint(equalTo: self.contentView.safeAreaLayoutGuide.trailingAnchor,
                                                constant: -15.0)
     ])
+
+    self.categoryLabel.translatesAutoresizingMaskIntoConstraints = false
+    self.contentView.addSubview(self.categoryLabel)
+    NSLayoutConstraint.activate([
+      self.categoryLabel.topAnchor.constraint(equalTo: self.priceLabel.bottomAnchor,
+                                          constant: 5.0),
+      self.categoryLabel.leadingAnchor.constraint(equalTo: self.thumbnailImageView.trailingAnchor,
+                                              constant: 15.0),
+      self.categoryLabel.trailingAnchor.constraint(equalTo: self.contentView.safeAreaLayoutGuide.trailingAnchor,
+                                               constant: -15.0)
+    ])
+
   }
 
   func configure(classifiedAd: ModelClassifiedAd) {
@@ -123,6 +142,7 @@ class ClassifiedAdCell: UICollectionViewCell {
 
     self.titleLabel.text = classifiedAd.title
     self.priceLabel.text = classifiedAd.price
+    self.categoryLabel.text = classifiedAd.category.name
     self.urgentLabel.isHidden = classifiedAd.isUrgent
   }
 }

@@ -9,7 +9,7 @@ import Foundation
 
 class ModelClassifiedAd: Hashable {
   let id: Int
-  let categoryId: Int
+  let category: ModelCategory
   let title: String
   let description: String
   let price: String
@@ -19,7 +19,7 @@ class ModelClassifiedAd: Hashable {
 
   init(
     id: Int,
-    categoryId: Int,
+    category: ModelCategory,
     title: String,
     description: String,
     price: String,
@@ -28,7 +28,7 @@ class ModelClassifiedAd: Hashable {
     isUrgent: Bool
   ) {
     self.id = id
-    self.categoryId = categoryId
+    self.category = category
     self.title = title
     self.description = description
     self.price = price
@@ -39,7 +39,7 @@ class ModelClassifiedAd: Hashable {
 
   func hash(into hasher: inout Hasher) {
     hasher.combine(self.id)
-    hasher.combine(self.categoryId)
+    hasher.combine(self.category)
     hasher.combine(self.title)
     hasher.combine(self.description)
     hasher.combine(self.price)

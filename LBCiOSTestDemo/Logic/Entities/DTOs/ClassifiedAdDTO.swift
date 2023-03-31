@@ -37,10 +37,10 @@ class ClassifiedAdDTO: Decodable {
     self.isUrgent = isUrgent
   }
 
-  func toModel() -> ModelClassifiedAd {
+  func toModel(getCategoryUseCase: GetCategoryUseCase = Container.useCases.provideGetCategoryUseCase()) -> ModelClassifiedAd {
     return ModelClassifiedAd(
       id: self.id,
-      categoryId: self.categoryId,
+      category: getCategoryUseCase.execute(categoryId: self.categoryId),
       title: self.title,
       description: self.description,
       price: Formatters.oneDecimalCaseCurrencyFormattedValue(number: self.price),
