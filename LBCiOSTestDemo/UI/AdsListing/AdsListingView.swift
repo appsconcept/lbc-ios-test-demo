@@ -44,7 +44,7 @@ class AdsListingView: UIView {
     self.titleLabel.translatesAutoresizingMaskIntoConstraints = false
     self.addSubview(self.titleLabel)
     NSLayoutConstraint.activate([
-      self.titleLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 20.0),
+      self.titleLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
       self.titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 15.0),
       self.titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -15.0)
     ])

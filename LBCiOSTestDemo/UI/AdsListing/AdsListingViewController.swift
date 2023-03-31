@@ -23,8 +23,11 @@ class AdsListingViewController: UIViewController {
   override func loadView() {
     super.loadView()
 
+    self.navigationItem.backButtonTitle = ""
+
     self.adsListingView = AdsListingView()
     self.view = self.adsListingView
+    self.adsListingView.collectionAdapter.view.delegate = self
   }
 
   override func viewDidLoad() {
@@ -35,16 +38,35 @@ class AdsListingViewController: UIViewController {
       case .success(let ads):
         self.adsListingView.collectionAdapter.itemsChanged(ads)
       case .failure(_):
-        let alert = UIAlertController(title: NSLocalizedString("", comment: ""),
-                                      message: NSLocalizedString("", comment: ""),
+        let alert = UIAlertController(title: NSLocalizedString("globals.error.title", comment: ""),
+                                      message: NSLocalizedString("ads.page.error.fetchAds.message", comment: ""),
                                       preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: NSLocalizedString("", comment: ""),
+        alert.addAction(UIAlertAction(title: NSLocalizedString("globals.ok", comment: ""),
                                       style: .default) { _ in
           alert.dismiss(animated: true, completion: nil)
         })
 
         self.present(alert, animated: true, completion: nil)
       }
+    }
+  }
+}
+
+extension AdsListingViewController: UICollectionViewDelegate {
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    if let classifiedAd = self.viewModel.getAd(index: indexPath.row) {
+      let adDetailViewController = AdDetailViewController(viewModel: AdDetailViewModel(classifiedAd: classifiedAd))
+      self.navigationController?.pushViewController(adDetailViewController, animated: true)
+    } else {
+      let alert = UIAlertController(title: NSLocalizedString("globals.error.title", comment: ""),
+                                    message: NSLocalizedString("ads.page.error.openAd.message", comment: ""),
+                                    preferredStyle: .alert)
+      alert.addAction(UIAlertAction(title: NSLocalizedString("globals.ok", comment: ""),
+                                    style: .default) { _ in
+        alert.dismiss(animated: true, completion: nil)
+      })
+
+      self.present(alert, animated: true, completion: nil)
     }
   }
 }

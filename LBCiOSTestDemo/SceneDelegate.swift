@@ -62,7 +62,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     let navigationController = UINavigationController(
       rootViewController: rootViewController
     )
-    navigationController.navigationBar.isHidden = true
+    navigationController.navigationBar.isHidden = false
+    navigationController.navigationBar.tintColor = .orange
     window?.rootViewController = navigationController
   }
 }

@@ -6,5 +6,12 @@
   
 */
 
+"globals.error.title"="Une erreur est survenue";
+"globals.ok"="Ok";
 "ads.page.title"="Annonces";
 "ads.page.cell.urgent.label"="Urgent";
+"ads.page.error.fetchAds.message"="Impossible d'acheter des annonces. Veuillez réessayer plus tard.";
+"ads.page.error.openAd.message"="Impossible d'ouvrir l'annonce. Veuillez réessayer.";
+"ad.detail.page.description.title"="Description";
+"ad.detail.page.details.title"="Détails";
+"ad.detail.page.category.title"="Catégorie:";

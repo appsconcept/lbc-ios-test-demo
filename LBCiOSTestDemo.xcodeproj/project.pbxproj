@@ -56,6 +56,9 @@
 		8D36998629D631FD006B0629 /* CategoriesRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36998529D631FD006B0629 /* CategoriesRepositoryImpl.swift */; };
 		8D36998929D63406006B0629 /* LoadCategoriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36998829D63406006B0629 /* LoadCategoriesUseCase.swift */; };
 		8D36998B29D6360A006B0629 /* GetCategoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36998A29D6360A006B0629 /* GetCategoryUseCase.swift */; };
+		8D36998E29D6D380006B0629 /* AdDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36998D29D6D380006B0629 /* AdDetailViewController.swift */; };
+		8D36999029D6D38E006B0629 /* AdDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36998F29D6D38E006B0629 /* AdDetailView.swift */; };
+		8D36999229D6D39B006B0629 /* AdDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36999129D6D39B006B0629 /* AdDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +132,9 @@
 		8D36998529D631FD006B0629 /* CategoriesRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRepositoryImpl.swift; sourceTree = "<group>"; };
 		8D36998829D63406006B0629 /* LoadCategoriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCategoriesUseCase.swift; sourceTree = "<group>"; };
 		8D36998A29D6360A006B0629 /* GetCategoryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCategoryUseCase.swift; sourceTree = "<group>"; };
+		8D36998D29D6D380006B0629 /* AdDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailViewController.swift; sourceTree = "<group>"; };
+		8D36998F29D6D38E006B0629 /* AdDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailView.swift; sourceTree = "<group>"; };
+		8D36999129D6D39B006B0629 /* AdDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +279,7 @@
 		8D36990D29D435E5006B0629 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				8D36998C29D6D370006B0629 /* AdDetail */,
 				8D36996629D5EABF006B0629 /* Extensions */,
 				8D36990F29D4361C006B0629 /* AdsListing */,
 			);
@@ -413,6 +420,16 @@
 				8D36998A29D6360A006B0629 /* GetCategoryUseCase.swift */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		8D36998C29D6D370006B0629 /* AdDetail */ = {
+			isa = PBXGroup;
+			children = (
+				8D36998D29D6D380006B0629 /* AdDetailViewController.swift */,
+				8D36998F29D6D38E006B0629 /* AdDetailView.swift */,
+				8D36999129D6D39B006B0629 /* AdDetailViewModel.swift */,
+			);
+			path = AdDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -568,6 +585,7 @@
 				8D36997929D62EB5006B0629 /* CategoryDTO.swift in Sources */,
 				8D36994F29D478E6006B0629 /* AdsServiceRoutes.swift in Sources */,
 				8D36995829D5C5D3006B0629 /* ModelClassifiedAd.swift in Sources */,
+				8D36999029D6D38E006B0629 /* AdDetailView.swift in Sources */,
 				8D36998629D631FD006B0629 /* CategoriesRepositoryImpl.swift in Sources */,
 				8D36991A29D440F8006B0629 /* ServiceProvider.swift in Sources */,
 				8D36994029D46E44006B0629 /* Constants.swift in Sources */,
@@ -575,6 +593,7 @@
 				8D3698D829D4314F006B0629 /* AppDelegate.swift in Sources */,
 				8D36992B29D44482006B0629 /* RepositoryProviderImpl.swift in Sources */,
 				8D36992C29D44482006B0629 /* RepositoryProvider.swift in Sources */,
+				8D36999229D6D39B006B0629 /* AdDetailViewModel.swift in Sources */,
 				8D36998929D63406006B0629 /* LoadCategoriesUseCase.swift in Sources */,
 				8D36992F29D444C0006B0629 /* UseCaseProvider.swift in Sources */,
 				8D36997029D60C7B006B0629 /* Formatters.swift in Sources */,
@@ -584,6 +603,7 @@
 				8D36995A29D5C6AA006B0629 /* ModelImagesUrl.swift in Sources */,
 				8D36991329D43659006B0629 /* AdsListingView.swift in Sources */,
 				8D3698DA29D4314F006B0629 /* SceneDelegate.swift in Sources */,
+				8D36998E29D6D380006B0629 /* AdDetailViewController.swift in Sources */,
 				8D36994529D46ECF006B0629 /* AdsApiService.swift in Sources */,
 				8D36996E29D60495006B0629 /* ImageCache.swift in Sources */,
 				8D36997F29D62FD3006B0629 /* CategoriesRouteProvider.swift in Sources */,
