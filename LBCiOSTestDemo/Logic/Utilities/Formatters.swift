@@ -17,4 +17,29 @@ class Formatters {
 
     return formatter.string(for: number) ?? String(format: "%.1f €", number)
   }
+
+  public static func `default`() -> DateFormatter {
+    let dateFormatter = DateFormatter()
+    dateFormatter.timeZone = TimeZone.init(abbreviation: "GMT")
+    dateFormatter.locale = Locale.autoupdatingCurrent
+    return dateFormatter
+  }
+
+  public static func getYYYYmmDDFromStringDate(stringDate: String) -> String {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateStyle = .short
+    dateFormatter.timeStyle = .none
+    dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+    if let date = from(yyyyMmDdHHmmDate: stringDate) {
+      return dateFormatter.string(from: date)
+    } else {
+      return stringDate
+    }
+  }
+
+  public static func from(yyyyMmDdHHmmDate: String) -> Date? {
+    let dateFormatter = Formatters.default()
+    dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+    return dateFormatter.date(from: yyyyMmDdHHmmDate)
+  }
 }

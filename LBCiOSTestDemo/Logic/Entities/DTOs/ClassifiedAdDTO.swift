@@ -45,7 +45,7 @@ class ClassifiedAdDTO: Decodable {
       description: self.description,
       price: Formatters.oneDecimalCaseCurrencyFormattedValue(number: self.price),
       imagesUrl: self.imagesUrl.toModel(),
-      creationDate: self.creationDate,
+      creationDate: Formatters.getYYYYmmDDFromStringDate(stringDate: self.creationDate),
       isUrgent: self.isUrgent
     )
   }
