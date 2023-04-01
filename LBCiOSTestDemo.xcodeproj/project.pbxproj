@@ -73,6 +73,8 @@
 		8D3699B329D840F8006B0629 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3699B229D840F8006B0629 /* LaunchViewController.swift */; };
 		8D3699B529D84138006B0629 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3699B429D84138006B0629 /* LaunchView.swift */; };
 		8D3699B729D84143006B0629 /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3699B629D84143006B0629 /* LaunchViewModel.swift */; };
+		8D3699BA29D8511B006B0629 /* FullscreenGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3699B929D8511B006B0629 /* FullscreenGalleryViewController.swift */; };
+		8D3699BC29D851B4006B0629 /* FullscreenGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3699BB29D851B4006B0629 /* FullscreenGalleryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +165,8 @@
 		8D3699B229D840F8006B0629 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		8D3699B429D84138006B0629 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		8D3699B629D84143006B0629 /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
+		8D3699B929D8511B006B0629 /* FullscreenGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullscreenGalleryViewController.swift; sourceTree = "<group>"; };
+		8D3699BB29D851B4006B0629 /* FullscreenGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullscreenGalleryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,6 +316,7 @@
 		8D36990D29D435E5006B0629 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				8D3699B829D850FD006B0629 /* FullcreenGallery */,
 				8D3699B129D840DB006B0629 /* Launch */,
 				8D36998C29D6D370006B0629 /* AdDetail */,
 				8D36996629D5EABF006B0629 /* Extensions */,
@@ -546,6 +551,15 @@
 			path = Launch;
 			sourceTree = "<group>";
 		};
+		8D3699B829D850FD006B0629 /* FullcreenGallery */ = {
+			isa = PBXGroup;
+			children = (
+				8D3699B929D8511B006B0629 /* FullscreenGalleryViewController.swift */,
+				8D3699BB29D851B4006B0629 /* FullscreenGalleryView.swift */,
+			);
+			path = FullcreenGallery;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -691,6 +705,7 @@
 				8D36997729D62E9C006B0629 /* CategoriesService.swift in Sources */,
 				8D36994929D4759B006B0629 /* ClassifiedAdDTO.swift in Sources */,
 				8D36994329D46EBB006B0629 /* AdsService.swift in Sources */,
+				8D3699BC29D851B4006B0629 /* FullscreenGalleryView.swift in Sources */,
 				8D36998429D631C4006B0629 /* CategoriesRepository.swift in Sources */,
 				8D3698DC29D4314F006B0629 /* AdsListingViewController.swift in Sources */,
 				8D36993229D4451E006B0629 /* Container.swift in Sources */,
@@ -717,6 +732,7 @@
 				8D36991129D4363E006B0629 /* AdsListingViewModel.swift in Sources */,
 				8D36993629D447A2006B0629 /* DataLoaderService.swift in Sources */,
 				8D3699B729D84143006B0629 /* LaunchViewModel.swift in Sources */,
+				8D3699BA29D8511B006B0629 /* FullscreenGalleryViewController.swift in Sources */,
 				8D36997B29D62F07006B0629 /* ModelCategory.swift in Sources */,
 				8D36995A29D5C6AA006B0629 /* ModelImagesUrl.swift in Sources */,
 				8D36991329D43659006B0629 /* AdsListingView.swift in Sources */,

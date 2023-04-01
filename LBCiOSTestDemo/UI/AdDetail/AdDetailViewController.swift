@@ -32,5 +32,15 @@ class AdDetailViewController: UIViewController {
 
     let classifiedAd = self.viewModel.load()
     self.adDetailView.configure(classifiedAd: classifiedAd)
+
+    self.adDetailView.galleryImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(openFullscreenGallery(_:))))
+  }
+
+  @objc private func openFullscreenGallery(_ sender: UIImageView?) {
+    let classifiedAd = self.viewModel.load()
+    if let imageUrl = classifiedAd.imagesUrl.thumb {
+      let fullscreenViewController = FullscreenGalleryViewController(imageUrl: imageUrl, classifiedId: classifiedAd.id)
+      self.present(fullscreenViewController, animated: true)
+    }
   }
 }

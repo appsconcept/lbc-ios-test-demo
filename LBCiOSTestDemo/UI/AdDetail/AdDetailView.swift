@@ -19,6 +19,7 @@ class AdDetailView: UIView {
   // Since there's only one image to show, otherwise we could use a UICollectionView or a UIPageViewController
   lazy var galleryImageView: UIImageView = {
     let imageView = UIImageView()
+    imageView.isUserInteractionEnabled = true
     imageView.backgroundColor = .systemGroupedBackground
     imageView.contentMode = .scaleAspectFit
     return imageView
