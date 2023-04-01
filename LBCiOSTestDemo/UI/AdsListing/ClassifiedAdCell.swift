@@ -138,7 +138,8 @@ class ClassifiedAdCell: UICollectionViewCell {
 
   func configure(classifiedAd: ModelClassifiedAd) {
     self.thumbnailImageView.image = nil
-    self.thumbnailImageView.imageFromUrl(urlString: classifiedAd.imagesUrl.small)
+    self.thumbnailImageView.tag = classifiedAd.id
+    self.thumbnailImageView.imageFromUrl(urlString: classifiedAd.imagesUrl.small, with: classifiedAd.id)
 
     self.titleLabel.text = classifiedAd.title
     self.priceLabel.text = classifiedAd.price

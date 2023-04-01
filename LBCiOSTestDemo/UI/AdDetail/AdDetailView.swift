@@ -245,7 +245,8 @@ class AdDetailView: UIView {
   }
 
   func configure(classifiedAd: ModelClassifiedAd) {
-    self.galleryImageView.imageFromUrl(urlString: classifiedAd.imagesUrl.thumb)
+    self.galleryImageView.tag = classifiedAd.id
+    self.galleryImageView.imageFromUrl(urlString: classifiedAd.imagesUrl.thumb, with: classifiedAd.id)
     self.titleLabel.text = classifiedAd.title
     self.priceLabel.text = classifiedAd.price
     self.categoryValueLabel.text = classifiedAd.category.name
