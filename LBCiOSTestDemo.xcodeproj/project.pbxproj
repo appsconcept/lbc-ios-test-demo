@@ -70,6 +70,9 @@
 		8D3699AC29D72BD6006B0629 /* MockCategoriesServiceRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3699AB29D72BD6006B0629 /* MockCategoriesServiceRoutes.swift */; };
 		8D3699AE29D72C3B006B0629 /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D3699AD29D72C3B006B0629 /* categories.json */; };
 		8D3699B029D72CD3006B0629 /* CategoriesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3699AF29D72CD3006B0629 /* CategoriesServiceTests.swift */; };
+		8D3699B329D840F8006B0629 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3699B229D840F8006B0629 /* LaunchViewController.swift */; };
+		8D3699B529D84138006B0629 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3699B429D84138006B0629 /* LaunchView.swift */; };
+		8D3699B729D84143006B0629 /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3699B629D84143006B0629 /* LaunchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +160,9 @@
 		8D3699AB29D72BD6006B0629 /* MockCategoriesServiceRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCategoriesServiceRoutes.swift; sourceTree = "<group>"; };
 		8D3699AD29D72C3B006B0629 /* categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = categories.json; sourceTree = "<group>"; };
 		8D3699AF29D72CD3006B0629 /* CategoriesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesServiceTests.swift; sourceTree = "<group>"; };
+		8D3699B229D840F8006B0629 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		8D3699B429D84138006B0629 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		8D3699B629D84143006B0629 /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +312,7 @@
 		8D36990D29D435E5006B0629 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				8D3699B129D840DB006B0629 /* Launch */,
 				8D36998C29D6D370006B0629 /* AdDetail */,
 				8D36996629D5EABF006B0629 /* Extensions */,
 				8D36990F29D4361C006B0629 /* AdsListing */,
@@ -529,6 +536,16 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		8D3699B129D840DB006B0629 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				8D3699B229D840F8006B0629 /* LaunchViewController.swift */,
+				8D3699B429D84138006B0629 /* LaunchView.swift */,
+				8D3699B629D84143006B0629 /* LaunchViewModel.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -663,6 +680,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D36993829D447B0006B0629 /* RemoteDataLoaderService.swift in Sources */,
+				8D3699B529D84138006B0629 /* LaunchView.swift in Sources */,
 				8D36993C29D45059006B0629 /* Errors.swift in Sources */,
 				8D36995F29D5D0A3006B0629 /* Bootloader.swift in Sources */,
 				8D36994B29D476C8006B0629 /* ImagesUrlDTO.swift in Sources */,
@@ -698,11 +716,13 @@
 				8D36997029D60C7B006B0629 /* Formatters.swift in Sources */,
 				8D36991129D4363E006B0629 /* AdsListingViewModel.swift in Sources */,
 				8D36993629D447A2006B0629 /* DataLoaderService.swift in Sources */,
+				8D3699B729D84143006B0629 /* LaunchViewModel.swift in Sources */,
 				8D36997B29D62F07006B0629 /* ModelCategory.swift in Sources */,
 				8D36995A29D5C6AA006B0629 /* ModelImagesUrl.swift in Sources */,
 				8D36991329D43659006B0629 /* AdsListingView.swift in Sources */,
 				8D3698DA29D4314F006B0629 /* SceneDelegate.swift in Sources */,
 				8D36998E29D6D380006B0629 /* AdDetailViewController.swift in Sources */,
+				8D3699B329D840F8006B0629 /* LaunchViewController.swift in Sources */,
 				8D36994529D46ECF006B0629 /* AdsApiService.swift in Sources */,
 				8D36996E29D60495006B0629 /* ImageCache.swift in Sources */,
 				8D36997F29D62FD3006B0629 /* CategoriesRouteProvider.swift in Sources */,

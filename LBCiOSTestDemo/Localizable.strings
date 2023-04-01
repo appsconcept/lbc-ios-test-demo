@@ -8,6 +8,8 @@
 
 "globals.error.title"="Une erreur est survenue";
 "globals.ok"="Ok";
+"globals.retry"="Recommencez";
+"launch.page.error.message"="Une erreur s'est produite lors du chargement des données nécessaires au démarrage de l'application. Veuillez réessayer.";
 "ads.page.title"="Annonces";
 "ads.page.cell.urgent.label"="Urgent";
 "ads.page.error.fetchAds.message"="Impossible d'acheter des annonces. Veuillez réessayer plus tard.";

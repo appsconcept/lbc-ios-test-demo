@@ -8,11 +8,11 @@
 import Foundation
 
 class Bootloader {
-  func start() {
+  func start(loadCompletion: @escaping (Bool) -> Void) {
     // Initialize the Container
     setupContainer()
     // Pre load the categories
-    Container.useCases.provideLoadCategoriesUseCase().execute()
+    Container.useCases.provideLoadCategoriesUseCase().execute(completion: loadCompletion)
   }
 
   private func setupContainer() {

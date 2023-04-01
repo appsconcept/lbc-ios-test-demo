@@ -10,7 +10,6 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
   var window: UIWindow?
-  private var bootloader: Bootloader?
 
   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -18,12 +17,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     guard let windowScene = (scene as? UIWindowScene) else { return }
 
-    self.bootloader = Bootloader()
-    self.bootloader?.start()
-
     window = UIWindow(frame: UIScreen.main.bounds)
     window?.overrideUserInterfaceStyle = .light
+
     self.load()
+
     window?.makeKeyAndVisible()
     window?.windowScene = windowScene
   }
@@ -57,7 +55,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   }
 
   private func load() {
-    
+    let bootloader = Bootloader()
+    let launchViewController = LaunchViewController(viewModel: LaunchViewModel(bootloader: bootloader))
+    launchViewController.delegate = self
+    window?.rootViewController = launchViewController
+  }
+
+  private func unlock() {
     let rootViewController = AdsListingViewController(viewModel: AdsListingViewModel(getAdsUseCase: Container.useCases.provideGetAdsUseCase()))
     let navigationController = UINavigationController(
       rootViewController: rootViewController
@@ -68,3 +72,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   }
 }
 
+extension SceneDelegate: LaunchViewControllerDelegate {
+  func launchViewControllerDidFinishSync(_ controller: LaunchViewController) {
+    self.unlock()
+  }
+}
