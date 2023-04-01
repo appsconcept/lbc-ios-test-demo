@@ -23,7 +23,6 @@ class AdsApiService: AdsService {
 
   func getAds(completion: @escaping (Result<[ClassifiedAdDTO], Error>) -> Void) {
     let request = routeProvider.getAdsRoute()
-    print(request)
     dataLoader.loadAndDecode(request: request, type: [ClassifiedAdDTO].self) { (data, error) in
       // Guard response
       guard let data = data, error == nil else {
