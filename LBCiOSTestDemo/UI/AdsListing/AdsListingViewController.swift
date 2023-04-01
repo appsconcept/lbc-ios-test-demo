@@ -54,6 +54,7 @@ class AdsListingViewController: UIViewController {
 
 extension AdsListingViewController: UICollectionViewDelegate {
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    collectionView.deselectItem(at: indexPath, animated: true)
     if let classifiedAd = self.viewModel.getAd(index: indexPath.row) {
       let adDetailViewController = AdDetailViewController(viewModel: AdDetailViewModel(classifiedAd: classifiedAd))
       self.navigationController?.pushViewController(adDetailViewController, animated: true)

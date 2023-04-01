@@ -136,6 +136,11 @@ class ClassifiedAdCell: UICollectionViewCell {
 
   }
 
+  override func updateConfiguration(using state: UICellConfigurationState) {
+    let reducedAlpha = state.isSelected || state.isHighlighted
+    self.contentView.alpha = reducedAlpha ? 0.7 : 1.0
+  }
+
   func configure(classifiedAd: ModelClassifiedAd) {
     self.thumbnailImageView.image = nil
     self.thumbnailImageView.tag = classifiedAd.id
