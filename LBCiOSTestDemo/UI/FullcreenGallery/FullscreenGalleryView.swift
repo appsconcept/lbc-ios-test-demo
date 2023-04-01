@@ -19,7 +19,7 @@ class FullscreenGalleryView: UIView {
 
   lazy var galleryImageView: UIImageView = {
     let imageView = UIImageView()
-    imageView.backgroundColor = .systemGroupedBackground
+    imageView.backgroundColor = .black
     imageView.contentMode = .scaleAspectFit
     return imageView
   }()
